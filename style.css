@@ -126,7 +126,7 @@ line-height:1.7;
 
 
 
-/* JOIN THE KEEP BUTTON */
+/* GOLD BUTTON */
 
 .button {
 
@@ -134,7 +134,7 @@ display:inline-block;
 
 background:#c9a34a;
 
-color:#080914;
+color:#080914 !important;
 
 padding:15px 40px;
 
@@ -146,9 +146,13 @@ text-decoration:none;
 
 margin-top:20px;
 
-transition:0.3s;
+border:none;
 
 cursor:pointer;
+
+transition:0.3s;
+
+font-family:Georgia, serif;
 
 }
 
@@ -164,7 +168,7 @@ transform:translateY(-3px);
 
 
 
-/* SECTIONS */
+/* PAGE SECTIONS */
 
 .section {
 
@@ -180,7 +184,7 @@ text-align:center;
 
 
 
-/* DROP ROADMAP */
+/* DROP GRID */
 
 .drops {
 
