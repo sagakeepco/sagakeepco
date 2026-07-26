@@ -1,240 +1,197 @@
 body {
-
-margin:0;
-background:#080914;
-color:white;
-font-family:Georgia, serif;
-
+    margin: 0;
+    background: #080914;
+    color: white;
+    font-family: Georgia, serif;
 }
 
 
+/* HERO SECTION */
 
 .hero {
-
-height:100vh;
-position:relative;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-overflow:hidden;
-
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
 }
-
 
 
 .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-position:absolute;
-top:0;
-left:0;
+    width: 100%;
+    height: 100%;
 
-width:100%;
-height:100%;
+    object-fit: cover;
 
-object-fit:cover;
-
-display:block;
-
-z-index:0;
-
+    z-index: 0;
 }
-
 
 
 .overlay {
+    position: absolute;
 
-position:absolute;
+    top: 0;
+    left: 0;
 
-top:0;
-left:0;
+    width: 100%;
+    height: 100%;
 
-width:100%;
-height:100%;
+    background: rgba(0,0,0,0.55);
 
-background:rgba(0,0,0,0.55);
-
-z-index:1;
-
+    z-index: 1;
 }
-
 
 
 .hero-text {
+    position: relative;
 
-position:relative;
+    z-index: 2;
 
-z-index:2;
+    max-width: 800px;
 
-max-width:800px;
-
-padding:20px;
-
+    padding: 20px;
 }
 
 
+/* TEXT */
 
 h1 {
-
-font-size:70px;
-
-letter-spacing:8px;
-
-margin-bottom:20px;
-
+    font-size: 70px;
+    letter-spacing: 8px;
+    margin: 0 0 20px;
 }
-
 
 
 h2 {
-
-font-size:42px;
-
+    font-size: 42px;
 }
-
 
 
 h3 {
-
-font-size:30px;
-
-color:#c9a34a;
-
+    font-size: 30px;
+    color: #c9a34a;
 }
-
 
 
 p {
-
-font-size:20px;
-
-line-height:1.7;
-
+    font-size: 20px;
+    line-height: 1.7;
 }
 
 
+/* BUTTON */
 
 button {
 
-background:#c9a34a;
+    background: #c9a34a;
 
-color:black;
+    color: black;
 
-border:none;
+    border: none;
 
-padding:15px 40px;
+    padding: 15px 40px;
 
-font-size:18px;
+    font-size: 18px;
 
-font-weight:bold;
+    font-weight: bold;
 
-cursor:pointer;
-
-margin-top:20px;
+    cursor: pointer;
 
 }
-
 
 
 button:hover {
 
-background:#e3c26b;
+    background: #e3c26b;
 
 }
 
 
+/* CONTENT SECTIONS */
 
 .section {
 
-padding:80px 30px;
+    padding: 80px 30px;
 
-max-width:1000px;
+    max-width: 1000px;
 
-margin:auto;
+    margin: auto;
 
-text-align:center;
-
-}
-
-
-
-.featured {
-
-border-top:1px solid #c9a34a;
-
-border-bottom:1px solid #c9a34a;
+    text-align: center;
 
 }
 
 
+/* DROP ROADMAP */
 
 .drops {
 
-display:grid;
+    display: grid;
 
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 
-gap:20px;
+    gap: 20px;
 
-text-align:left;
+    text-align: left;
 
-margin-top:40px;
+    margin-top: 40px;
 
 }
-
 
 
 .drops div {
 
-background:#111321;
+    background: #111321;
 
-padding:20px;
+    padding: 20px;
 
-border-left:3px solid #c9a34a;
+    border-left: 3px solid #c9a34a;
 
-font-size:18px;
+    font-size: 18px;
 
 }
 
 
+/* FOOTER */
 
 footer {
 
-text-align:center;
+    text-align: center;
 
-padding:40px;
+    padding: 40px;
 
-background:#05060d;
+    color: #aaa;
 
-color:#aaa;
+    background: #05060d;
 
 }
 
 
 
+/* MOBILE */
 
 @media(max-width:700px){
 
-
-h1 {
-
-font-size:42px;
-
-}
+    h1 {
+        font-size: 42px;
+    }
 
 
-h2 {
-
-font-size:32px;
-
-}
+    h2 {
+        font-size: 32px;
+    }
 
 
-.hero-image {
+    .hero-image {
 
-object-position:center;
+        object-position: center;
 
-}
-
+    }
 
 }
