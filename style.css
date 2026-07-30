@@ -303,14 +303,20 @@ h3 {
   gap: 50px;
 }
 
-.about-logo {
+.about-logo-frame {
   width: 100%;
   aspect-ratio: 1;
-  object-fit: contain;
+  overflow: hidden;
   border-radius: 50%;
   border: 1px solid var(--line);
   background: rgba(255,255,255,.03);
-  transform: scale(1.12);
+}
+
+.about-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.72);
   transform-origin: center;
 }
 
@@ -382,7 +388,7 @@ h3 {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .product-grid,
   .about { grid-template-columns: 1fr; }
-  .about-logo { max-width: 300px; margin: 0 auto; }
+  .about-logo-frame { max-width: 300px; margin: 0 auto; }
 }
 
 @media (max-width: 560px) {
