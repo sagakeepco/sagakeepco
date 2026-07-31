@@ -20,12 +20,17 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/">
-      <img src="/images/saga-keep-logo-white.png" alt="Saga Keep Co. logo">
+    <a class="brand" href="/" aria-label="Saga Keep Co. home">
+      <img src="/images/saga-keep-logo-white.png" alt="">
       <span>Saga Keep Co.</span>
     </a>
-    <nav class="nav" aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="primary-navigation" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
       <a href="/#collection">Collection</a>
+      <a href="/#journey">Release path</a>
       <a href="/about.html">About</a>
       <a href="/shipping.html">Shipping</a>
       <a href="/returns.html">Returns</a>
@@ -85,5 +90,6 @@
   </div>
 </footer>
 
+<script src="/nav.js"></script>
 </body>
 </html>

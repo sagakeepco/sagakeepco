@@ -56,11 +56,15 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/">
-      <img src="/images/saga-keep-logo-white.png" alt="Saga Keep Co. logo">
+    <a class="brand" href="/" aria-label="Saga Keep Co. home">
+      <img src="/images/saga-keep-logo-white.png" alt="">
       <span>Saga Keep Co.</span>
     </a>
-    <nav class="nav" aria-label="Main navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="primary-navigation" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
       <a href="/#collection">Collection</a>
       <a href="/#journey">Release path</a>
       <a href="/about.html">About</a>
@@ -115,18 +119,18 @@
       <span class="zoom-hint" aria-hidden="true">Click to enlarge</span>
     </button>
           <div class="product-body">
-            <span class="badge">First release</span>
+            <span class="badge status-badge">Prototype ordered</span>
             <h3>The Trojan Horse</h3>
             <p>The final deception breaks the walls of Troy as Odysseus leads the Greek force toward a city consumed by fire.</p>
-            <div class="price">$39.99</div>
+            <div class="price"><span class="price-label">Planned launch price</span>$39.99</div>
             <ul class="specs">
               <li>24 × 14 inch TCG playmat</li>
-              <li>Smooth fabric playing surface</li>
-              <li>Non-slip neoprene backing</li>
-              <li>Stitched black edges planned</li>
+              <li>Smooth cloth playing surface</li>
+              <li>Non-slip rubber backing</li>
+              <li>Clear stitched edging on the prototype</li>
             </ul>
             <div class="card-actions">
-              <a class="button secondary" href="/contact.html">Get launch updates</a>
+              <a class="button" href="mailto:sagakeepsupport@gmail.com?subject=Saga%20Keep%20Launch%20Updates">Join the launch list</a>
             </div>
           </div>
         </article>
@@ -143,12 +147,12 @@
             <span class="badge">Later in the voyage</span>
             <h3>The Nekyia</h3>
             <p>Far into the journey home, Odysseus descends to the realm of the dead to seek prophecy from Tiresias.</p>
-            <div class="price">$39.99</div>
+            <div class="price future-price">Future release</div>
             <ul class="specs">
-              <li>24 × 14 inch TCG playmat</li>
-              <li>Smooth fabric playing surface</li>
-              <li>Non-slip neoprene backing</li>
-              <li>Stitched black edges planned</li>
+              <li>Planned 24 × 14 inch format</li>
+              <li>Final specifications pending</li>
+              <li>Release timing not yet announced</li>
+              <li>Part of The Odyssey Collection</li>
             </ul>
             <div class="card-actions">
               <a class="button secondary" href="/contact.html">Get launch updates</a>
@@ -158,7 +162,7 @@
       </div>
 
       <div class="notice">
-        These products are in pre-launch development. Real prototype photographs, final production details, and shipping estimates will be published before customers are asked to purchase.
+        The Trojan Horse prototype has been ordered. Checkout will remain closed until the physical sample is inspected and real product photographs, final specifications, inventory, and shipping estimates are published.
       </div>
     </div>
   </section>
@@ -203,6 +207,34 @@
             <p>Additional releases may explore other major episodes from the voyage as the collection grows.</p>
           </div>
         </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Launch information</div>
+        <h2>What to expect from Drop 001.</h2>
+      </div>
+      <div class="faq-grid">
+        <details>
+          <summary>When can I order The Trojan Horse?</summary>
+          <p>Ordering will open after the physical prototype is inspected and real product photographs are added to the site.</p>
+        </details>
+        <details>
+          <summary>What size will the mat be?</summary>
+          <p>The prototype is a standard 24 × 14 inch TCG playmat with a smooth cloth top, non-slip rubber backing, and clear stitched edging.</p>
+        </details>
+        <details>
+          <summary>Will this be a preorder or in-stock release?</summary>
+          <p>The final launch method will be announced after prototype approval and production costs are confirmed.</p>
+        </details>
+        <details>
+          <summary>How will payments be handled?</summary>
+          <p>Checkout will be processed securely through an established payment provider. Saga Keep Co. will not receive or store complete card numbers.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -264,6 +296,7 @@
   </div>
 </div>
 <script src="/lightbox.js"></script>
+<script src="/nav.js"></script>
 
 </body>
 </html>
